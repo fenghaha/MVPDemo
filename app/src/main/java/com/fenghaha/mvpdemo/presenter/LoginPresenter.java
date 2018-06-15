@@ -24,7 +24,7 @@ public class LoginPresenter implements MvpCallBack<String> {
     public void onSuccess(String data) {
         loginView.hideLoading();
         loginView.showToast("登陆成功!");
-        loginView.finishActivity();
+        loginView.completeLogin();
     }
 
     @Override

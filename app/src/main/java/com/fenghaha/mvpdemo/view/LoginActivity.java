@@ -39,8 +39,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
-    public void finishActivity() {
+    public void completeLogin() {
         mProgressDialog.dismiss();
+        MainActivity.actionStart(this);
         finish();
     }
 
